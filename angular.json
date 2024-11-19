@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "copiaPrime": {
+    "primeRecope": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "outputPath": "dist/copia-prime",
+            "outputPath": "dist/prime-recope",
             "index": "src/index.html",
             "browser": "src/main.ts",
             "polyfills": [
@@ -27,9 +27,17 @@
               }
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/primeicons/primeicons.css",
+              "node_modules/primeng/resources/themes/lara-light-blue/theme.css",
+              "node_modules/primeng/resources/primeng.min.css"
             ],
-            "scripts": []
+            "scripts": [],
+            "server": "src/main.server.ts",
+            "prerender": true,
+            "ssr": {
+              "entry": "server.ts"
+            }
           },
           "configurations": {
             "production": {
@@ -59,10 +67,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "copiaPrime:build:production"
+              "buildTarget": "primeRecope:build:production"
             },
             "development": {
-              "buildTarget": "copiaPrime:build:development"
+              "buildTarget": "primeRecope:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -85,7 +93,10 @@
               }
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.scss",
+              "node_modules/primeicons/primeicons.css",
+              "node_modules/primeng/resources/themes/lara-light-blue/theme.css",
+              "node_modules/primeng/resources/primeng.min.css"
             ],
             "scripts": []
           }

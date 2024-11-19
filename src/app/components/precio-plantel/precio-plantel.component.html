@@ -1,0 +1,34 @@
+<div class = 'card'>
+    <p-table
+    [value]="precios"
+    styleclass="p-datatable-gridlines"
+    [tableStyle]="{ 'min-width': '50rem'}"
+    ><ng-template pTemplate="header">
+        <tr>
+          <th>Fecha</th>
+          <th>Tipo</th>
+          <th>Impuesto</th>
+          <th>Sin IVA</th>
+          <th>Ultima Actualización</th>
+          <th>Identificación</th>
+          <th>Precio Total</th>
+          <th>Producto</th>
+          <th>Margen de ganancia</th>
+        </tr>
+      </ng-template>
+      <ng-template pTemplate="body" let-precio-plantel>
+        <tr>
+          <td>{{precio-plantel.fecha}}</td>
+          <td>{{precio-plantel.tipo}}</td>
+          <td>{{precio-plantel.impuesto}}</td>
+          <td>{{precio-plantel.precsinimp}}</td>
+          <td>{{precio-plantel.fechaupd}}</td>
+          <td>{{precio-plantel.id}}</td>
+          <td>{{precio-plantel.preciototal}}</td>
+          <td>{{precio-plantel.nomprod}}</td>
+          <td>{{precio-plantel.margenpromedio}}</td>
+        </tr>
+      </ng-template>
+</p-table>
+
+</div>
