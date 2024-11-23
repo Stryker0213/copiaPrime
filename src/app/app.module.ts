@@ -5,11 +5,11 @@ import { AppRoutingModule } from './app-routing-module';
 import { AppComponent } from './app.component';
 import { PrecioConsumidorComponent } from './components/precio-consumidor/precio-consumidor.component';
 import { PrecioPlantelComponent } from './components/precio-plantel/precio-plantel.component'; 
-import { DragDropModule } from 'primeng/dragdrop';
+import { ImportsModule } from './importsNG';
 
 @NgModule({
   declarations: [AppComponent, PrecioConsumidorComponent, PrecioPlantelComponent],
-  imports: [DragDropModule,BrowserModule, AppRoutingModule, HttpClientModule], // Agregar HttpClientModule aquí
+  imports: [BrowserModule, AppRoutingModule, HttpClientModule], // Agregar HttpClientModule aquí
   providers: [],
   bootstrap: [AppComponent]
 })

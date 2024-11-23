@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {ImportsModule} from './importsNG';
+import {ImportsModule} from '../importsNG';
 import {MenuItem} from 'primeng/api';
 import { Router } from '@angular/router';
 

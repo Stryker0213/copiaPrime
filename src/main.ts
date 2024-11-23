@@ -9,11 +9,11 @@ import { Routes, provideRouter } from '@angular/router';
 
 const routes: Routes = [];
 
-  bootstrapApplication(AppMenu, {
+ /* bootstrapApplication(AppMenu, {
     providers: [provideAnimationsAsync(), provideRouter(routes)],
-    }).catch((err) => console.error(err));
+    }).catch((err) => console.error(err));*/
   
 
 
-/*bootstrapApplication(AppComponent, appConfig)
-  .catch((err) => console.error(err));*/
+bootstrapApplication(AppComponent, appConfig)
+  .catch((err) => console.error(err));

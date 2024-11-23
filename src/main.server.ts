@@ -4,8 +4,8 @@ import { config} from './app.config.server';
 
 import { AppMenu} from './app/menu/menu';
 
-const bootstrap = () => bootstrapApplication(AppMenu, config);
+//const bootstrap = () => bootstrapApplication(AppMenu, config);
 
-//const bootstrap = () => bootstrapApplication(AppComponent, config);
+const bootstrap = () => bootstrapApplication(AppComponent, config);
 
 export default bootstrap;

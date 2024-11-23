@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { ImportsModule } from '../../menu/importsNG';
+import { ImportsModule } from '../../importsNG';
 import { PrecioConsumidorService } from '../../services/precio-consumidor.service';
 import { PrecioConsumidor } from '../../models/precio-consumidor ';
 

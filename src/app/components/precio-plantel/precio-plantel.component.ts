@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {PrecioPlantel} from '../../models/precio-plantel';
 import {PrecioPlantelService} from '../../services/precio-plantel.service';
-import { ImportsModule } from '../../menu/importsNG';
+import { ImportsModule } from '../../importsNG';
 
 @Component({
   selector: 'app-precio-plantel',
